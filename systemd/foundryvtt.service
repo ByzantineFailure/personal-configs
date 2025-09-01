@@ -1,0 +1,11 @@
+[Unit]
+Description=Foundry VTT
+
+[Service]
+type=simple
+ExecStart=node /home/foundry/foundryvtt/main.js --dataPath=/mnt/media/foundrydata
+Restart=on-failure
+User=foundry
+
+[Install]
+WantedBy=multi-user.target

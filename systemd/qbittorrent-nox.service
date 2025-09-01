@@ -6,7 +6,11 @@ After=network.target
 Type=forking
 User=qbt
 Group=qbt
+<<<<<<< HEAD
 UMask=007
+=======
+UMask=000
+>>>>>>> 887aed5 (Add dkms conf for ixgbe, foundry support, qbt-nox)
 ExecStart=/usr/bin/qbittorrent-nox -d --webui-port=12345
 Restart=on-failure
 
